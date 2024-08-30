@@ -32,7 +32,8 @@
 <!-- font icon css style-->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body onLoad="load()" onUnload="GUnload()">
+<!-- <body onLoad="load()" onUnload="GUnload()"> Unload event listeners are deprecated and will be removed. -->
+<body>
 
 <!--wrapper start-->
 <div class="wrapper" id="wrapper"> 
@@ -930,6 +931,17 @@ function count(options) {
             $(this).remove();
         });
     });
+</script>
+
+<!-- Scripts -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      load(); // Llama a la función 'load' cuando el DOM está listo
+  });
+
+  window.addEventListener("beforeunload", function() {
+      GUnload(); // Llama a la función 'GUnload' antes de que la página se descargue
+  });
 </script>
 
 </body>
