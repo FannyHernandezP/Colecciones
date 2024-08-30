@@ -362,5 +362,14 @@
 <script src="js/main.js"></script> 
 <!--for theme custom jquery--> 
 <script src="js/custom.js"></script>
+
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#preloader').fadeOut('slow', function() {
+            $(this).remove();
+        });
+    });
+</script>
+
 </body>
 </html>
