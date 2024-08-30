@@ -767,12 +767,14 @@ Bibliotecología y Archivística - Agosto 2024 </p>
     var map;
 
     function load() {
-      if (GBrowserIsCompatible()) {
-        map = new GMap2(document.getElementById("map"));
-        map.setCenter(new GLatLng(-37.817682, 144.957595), 13);
-        document.getElementById("map").checked = true;
-        toggleZoom(false);
-      }
+      // Se deshabilita porque no es compatible con la api actual
+      // if (GBrowserIsCompatible()) {
+      //  map = new GMap2(document.getElementById("map"));
+      //  map.setCenter(new GLatLng(-37.817682, 144.957595), 13);
+      //  document.getElementById("map").checked = true;
+      //  toggleZoom(false);
+      //}
+      //
     }
 
     function toggleZoom(isChecked) {
@@ -921,6 +923,7 @@ function count(options) {
 <!--for theme custom jquery--> 
 <script src="js/custom.js"></script>
 
+<!--Esto lo sugirio ChatGPT--> 
 <script type="text/javascript">
     $(window).on('load', function() {
         $('#preloader').fadeOut('slow', function() {
