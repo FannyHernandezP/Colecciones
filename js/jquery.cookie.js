@@ -116,3 +116,14 @@
 	};
 
 }));
+/*!
+ * Sugerido por ChatGPT
+ */
+return (document.cookie = [
+    encode(key), '=', stringifyCookieValue(value),
+    options.expires ? '; expires=' + options.expires.toUTCString() : '', 
+    options.path    ? '; path=' + options.path : '',
+    options.domain  ? '; domain=' + options.domain : '',
+    options.secure  ? '; secure' : '',
+    'SameSite=Lax'  // Incluye SameSite con un valor predeterminado de 'Lax'
+].join(''));
