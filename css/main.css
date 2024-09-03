@@ -651,8 +651,8 @@ ul.submenu{ display:none;}
   margin-top:0px;
   height:80px;
   position: relative;
-  z-index: 1000; /* ChatGPT Asegura que esté sobre otros elementos */
-  background-color: #ffffff; /* ChatGPT Fondo blanco sólido desde el inicio */
+  z-index: 1000 !important; /* ChatGPT Asegura que esté sobre otros elementos */
+  background-color: #ffffff !important; /* ChatGPT Fondo blanco sólido desde el inicio */
 }
 .navbar-wrapper .container{
 	padding:0px;
