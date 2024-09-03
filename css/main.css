@@ -1,12 +1,12 @@
 /* ------------------------------------------------------------------------------
 
 	Template Name: eLearn
-	Template URI: http://www.themeelite.com/
+	Template URI: https://www.themeelite.com/
 	Description: Full Screen Design Agency Template
 	Author: Themeelite
-	Author URI: http://www.themeelite.com
+	Author URI: https://www.themeelite.com
 	License: GNU General Public License version 3.0
-	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	License URI: https://www.gnu.org/licenses/gpl-3.0.html
 	Version: 1.0
 	
 	1. CSS Reset
@@ -1276,6 +1276,9 @@ ul.pricing-boxes li.best-plan h4 {
 ul.pricing-boxes li.best-plan:hover { box-shadow: 0px 0px 15px rgba(0,0,0,0.20) }
 ul.pricing-boxes.three li {
     width: 33%; /*width: 313px;*/;
+}
+ul.pricing-boxes.four li {
+    width: 20%; /*width: 313px;*/;
 }
 ul.pricing-boxes li.best-plan .btn-primary{
 	border-color:#d7bb58;
