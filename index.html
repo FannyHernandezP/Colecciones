@@ -883,5 +883,27 @@ function count(options) {
 
 <!--for theme custom jquery--> 
 <script src="js/custom.js"></script>
+
+<!--Esto lo sugirio ChatGPT--> 
+<script type="text/javascript">
+  $(window).on('load', function() {
+      $('#preloader').fadeOut('slow', function() {
+          $(this).remove();
+      });
+  });
+</script>
+
+<!-- Scripts -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    load(); // Llama a la función 'load' cuando el DOM está listo
+});
+
+window.addEventListener("beforeunload", function() {
+    GUnload(); // Llama a la función 'GUnload' antes de que la página se descargue
+});
+</script>
+<!--Esto lo sugirio ChatGPT--> 
+
 </body>
 </html>
