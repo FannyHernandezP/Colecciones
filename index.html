@@ -851,23 +851,42 @@ $(document).ready( function() {
 	$("a[data-rel^='prettyPhoto']").prettyPhoto();	
 	
 	// for client work jquary
-	var windowBottom = $(window).height()+0;
-	var index=0;
-	$(document).scroll(function(){
-		divposition = parseInt($('.factabout').offset().top),10;
-		divsrollpos = parseInt($(window).scrollTop()),10;
-		ctop = parseInt(divposition-divsrollpos),10;
-		if(ctop<Math.round(windowBottom/2)){
-			if(index==0){	
-				
-				$('.timer').each(count);
-				
-			}
-			index++;
-		}
-	});
+	//var windowBottom = $(window).height()+0;
+	//var index=0;
+	//$(document).scroll(function(){
+	//	divposition = parseInt($('.factabout').offset().top),10;
+	//	divsrollpos = parseInt($(window).scrollTop()),10;
+	//	ctop = parseInt(divposition-divsrollpos),10;
+	//	if(ctop<Math.round(windowBottom/2)){
+	//		if(index==0){	
+	//			
+	//			$('.timer').each(count);
+	//			
+	//		}
+	//		index++;
+	//	}
+	//});
 
+  // for client work jquary
+  //Sugiere chatGPT
+  var windowBottom = $(window).height() + 0;
+  var index = 0;
 
+  $(document).scroll(function() {
+      var $factabout = $('.factabout');
+      if ($factabout.length) {  // Verifica si el elemento existe
+          var divposition = parseInt($factabout.offset().top, 10);
+          var divsrollpos = parseInt($(window).scrollTop(), 10);
+          var ctop = parseInt(divposition - divsrollpos, 10);
+          if (ctop < Math.round(windowBottom / 2)) {
+              if (index == 0) {
+                  $('.timer').each(count);
+              }
+              index++;
+          }
+      }
+  });
+//Sugiere chatGPT
 
 function count(options) {
 	var $this = $(this);
